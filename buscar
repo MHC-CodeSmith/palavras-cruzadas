@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <string.h>
+
+char empresas [4][100];
+char busca[100];
+
+int main ()
+{
+    int i, encontrou;
+    encontrou = 0;
+    printf("digite nome empresa\n");
+    for (i=0; i<=3; i++)
+    {
+        gets(empresas[i]);
+    }
+
+    printf("nomes de empresas sao:\n");
+    for (i=0; i<=3; i++)
+    {
+
+        printf("%s \n", empresas[i]);
+    }
+
+    printf("pesquise uma empresa");
+    gets(busca);
+    for (i=0; i<=3; i++)
+    {
+
+        if (strcmp(empresas[i], busca)==0)
+        {
+            printf("encontrou a busca, da empresa %s ", empresas[i]);
+            encontrou =1;
+        }
+
+    }
+    if(!encontrou )
+        {
+            printf("busca n encontrada\n");
+        }
+
+    return 0;
+}

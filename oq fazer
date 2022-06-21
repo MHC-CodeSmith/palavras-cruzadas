@@ -1,0 +1,15 @@
+receber as perguntas/dicas, respostas e posições
+criar um metodo de organizar essas respostas na matriz da melhor forma possivel seguindo a posição correspondente:
+
+    criar uma lista em ordem crescente com todas as respostas na horizontal e na vertical
+    começar com a maior palabv  vra vertical da lista e imprimi-la na matriz,
+    começar o teste em ordem crescente de palavras horizontais analisando se há alguma letra que seja igual entre elas
+            se sim alocar essa palavra no local dessa letra igual
+            se não tiver nenhuma alocar com um espaço em qualquer lugar a direita da primeira palavra
+
+
+
+
+
+
+Especificar um comando para finalizar a inserção de entradas;

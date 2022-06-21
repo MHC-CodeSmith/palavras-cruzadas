@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>//necessário para strlen
+#include <conio.h>
+
+char nome [5][80];
+void ordena()
+{
+    int x, y,r;
+    int tamanhox, tamanhoy;
+    char aux [80];
+
+    for (x=0; x<=4; x++)
+    {
+        for (y=x+1; y<=4; y++)
+        {
+
+            tamanhox = strlen(nome[x]);
+            tamanhoy= strlen(nome[y]);
+
+            if(tamanhox<tamanhoy)
+
+            {
+                strcpy(aux,nome[x]);
+                strcpy(nome[x], nome [y]);
+                strcpy(nome[y],aux);
+            }
+        }
+    }
+}
+main ()
+{
+    int x;
+    printf("digite 5 nomes: ");
+    for (x=0; x<=4; x++)
+    {
+        gets(nome[x]);
+    }
+
+    ordena();
+
+    printf("nomes ordenados: \n");
+    for (x=0; x<=4; x++)
+    {
+        puts(nome[x]);
+    }
+    printf("\nmaior tamanho %d\n", strlen(nome[0]));
+}

@@ -19,3 +19,8 @@ Especificar um comando para finalizar a inserção de entradas;
 
 criar uma matriz definida a partir dos maiores tamanhos de vertical e horizontal
 pegar os caracteres da maior palavra na vertiucal e alocar nessa matriz na vertical
+
+
+
+encaixar os caracteres da vertical
+tentar encaixar do meio 

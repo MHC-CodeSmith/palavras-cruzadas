@@ -1,42 +1,46 @@
 #include <stdio.h>
 #include <string.h>
 
-char empresas [4][100];
-char busca[100];
+char palavra [2][100];
+//char busca[1][1];
 
 int main ()
 {
-    int i, encontrou;
+    int i,g, encontrou, TAM;
+    char busca;
     encontrou = 0;
-    printf("digite nome empresa\n");
-    for (i=0; i<=3; i++)
+    printf("digite uma palavra\n");
+    for (i=0; i<=1; i++)
     {
-        gets(empresas[i]);
+        gets(palavra[i]);
     }
 
-    printf("nomes de empresas sao:\n");
-    for (i=0; i<=3; i++)
+    printf("As palavras sao:\n");
+    for (i=0; i<=1; i++)
     {
-
-        printf("%s \n", empresas[i]);
+        TAM = strlen(palavra[i]);
+        printf("%s \n", palavra[i]);
     }
 
-    printf("pesquise uma empresa");
-    gets(busca);
+    printf("\npesquise um caractere\n");
+    busca = getchar();
     for (i=0; i<=3; i++)
     {
+        for (g=0; g<=TAM; g++)
+            if( palavra[i][g]==busca)
 
-        if (strcmp(empresas[i], busca)==0)
-        {
-            printf("encontrou a busca, da empresa %s ", empresas[i]);
-            encontrou =1;
-        }
+            {
+                printf("\nencontrou a busca, da palavra: %s \n", palavra[i]);
+                encontrou =1;
+                printf("%c", busca);
+            }
 
     }
     if(!encontrou )
-        {
-            printf("busca n encontrada\n");
-        }
+    {
+        printf("\nbusca n encontrada, caractere usado:\n");
+        printf("%c", busca);
+    }
 
     return 0;
 }

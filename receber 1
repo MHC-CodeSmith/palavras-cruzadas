@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+#include <time.h>
+#define TAM 30
+
+typedef struct{
+
+char pergunta [TAM];
+char resposta [TAM];
+char posicao [TAM];
+}t_info;
+
+
+t_info registro(){
+
+t_info registro;
+char i = 0, ch;
+while (i!= 's'){
+    printf("\nEscreva a pergunta: ");
+    scanf("s", registro.pergunta);
+    printf("\nEscreva a posição: ");
+    scanf("s", registro.posicao);
+    printf("\nEscreva a resposta: ");
+    scanf("s", registro.resposta);
+    printf("\nAperte s se quiser sair: ");
+    scanf("c",&i);
+    getch();
+    scanf("&c", &i);
+
+}
+return registro;
+
+}
+int main ()
+{ t_info registro;
+return 0;}

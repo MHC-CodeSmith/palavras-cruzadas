@@ -13,3 +13,9 @@ criar um metodo de organizar essas respostas na matriz da melhor forma possivel 
 
 
 Especificar um comando para finalizar a inserção de entradas;
+
+
+
+
+criar uma matriz definida a partir dos maiores tamanhos de vertical e horizontal
+pegar os caracteres da maior palavra na vertiucal e alocar nessa matriz na vertical

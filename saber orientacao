@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+
+int main(int argc, const char * argv[]){
+    
+char orientacao [9];
+
+printf("escreva orientacao:\n");
+gets(orientacao);
+if(strcmp(orientacao, "horizontal")==0){
+    printf("EH horizontal");
+    
+}
+if (strcmp(orientacao, "horizontal")!=0){
+    printf("EH vertical");
+    
+}
+
+getchar();
+return 0;
+}

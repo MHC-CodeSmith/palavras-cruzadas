@@ -18,7 +18,7 @@ int main() {
    char i='ì';
 
    while(i!='s'){
-    poggers();
+    recebe();
     scanf (" %c",&i);
     printf("\n");
    }

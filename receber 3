@@ -1,5 +1,8 @@
 #include <stdio.h>
+#include <windows.h>
 #define TAM 46
+
+void poggers();
 
 struct registro{
     char resposta[TAM];
@@ -7,37 +10,36 @@ struct registro{
     char orientacao[TAM];
 };
 
-//struct registro recebe_array(char resposta, char dicas, char orientacao){
- //   struct registro r;
- //   char i=0;
-//    while(i!='s'){
- //   printf("\n escreva a resposta: ");
-//    gets(r.resposta);
- //   printf("\n escreva a dica: ");
- //   gets(r.dicas);
- //   printf("\n escreva a orientacao: ");
- //   gets(r.orientacao);
- //   printf("\n aperte s se quiser sair");
- //   scanf("%c", &i);
-  //  }
-   
- //   return r;
-//}
-
 int main() {
+
     struct registro r;
-   // struct registro recebe_array(char resposta, char dicas, char orientacao);
-   char i=0;
+
+
+   char i='ì';
+
    while(i!='s'){
-   printf("\n escreva a resposta: ");
-   gets(r.resposta);
-   printf("\n escreva a dica: ");
-   gets(r.dicas);
-   printf("\n escreva a orientacao: ");
-   gets(r.orientacao);
-   printf("\n aperte s se quiser sair");
-   scanf("%c", &i);
+    poggers();
+    scanf (" %c",&i);
+    printf("\n");
    }
-    printf("pergunta: %s\ndica: %s\norientacao: %s\n", r.resposta, r.dicas, r.orientacao);
     return 0;
+}
+
+void poggers(){
+
+struct registro r;
+
+       scanf("");
+       printf("\n escreva a dica: ");
+       scanf(" %s",&r.dicas );
+
+       printf("\n escreva a resposta: ");
+       scanf(" %s",&r.resposta );
+
+       printf("\n escreva a orientacao: ");
+       scanf(" %s",&r.orientacao );
+
+       printf("\n dica: %s\n resposta: %s\n orientacao: %s\n", r.dicas, r.resposta, r.orientacao);
+
+       printf("\n aperte s se quiser sair ");
 }
